@@ -19,3 +19,11 @@
 SELECT emp_name, hiredate 
 FROM employee_master 
 WHERE hiredate < '1980-06-30' OR hiredate > '1981-12-31';
+
+## 2. Display the names of employees whose names have second alphabet A in their names.
+
+**Query:**
+```sql
+SELECT emp_name 
+FROM employee_master 
+WHERE emp_name LIKE '_A%';
